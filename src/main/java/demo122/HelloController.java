@@ -21,7 +21,7 @@ IProductService iproductService=new ProductService();
 	public List<Product> m1()
 	{
         System.out.println("welcom m1");
-		
+        System.out.println("welcom m1");
 		return iproductService.findAll();
 	}
 	
