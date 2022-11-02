@@ -20,7 +20,7 @@ IProductService iproductService=new ProductService();
 	@GetMapping("/productall")
 	public List<Product> m1()
 	{
-
+        System.out.println("welcom m1");
 		
 		return iproductService.findAll();
 	}
@@ -28,7 +28,7 @@ IProductService iproductService=new ProductService();
 	@GetMapping("product/{id}")
 	public Product m2(@PathVariable("id") int id)
 	{
-	
+		 System.out.println("welcom m2");
 		return iproductService.getProduct(id);
 	}
 	
